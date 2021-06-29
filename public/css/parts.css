@@ -1,0 +1,380 @@
+/*START メッセージレイアウト１*/
+span.msg01 {
+  display: inline-block;
+  color: #364e96;/*文字色*/
+  padding: 1.0em 1.0em;/*上下、左右の余白*/
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
+  /*border: solid 3px #364e96;*/
+}
+/*END メッセージレイアウト１ */
+
+/* --- ↓Start ボタンのCSS ---　*/
+.btn-animation-02 {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background-color: #9ec34b;
+  border: 2px solid #9ec34b;
+  font-size: 16px;
+  color: #9ec34b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.btn-animation-02 span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-animation-02::before,
+.btn-animation-02::after {
+  content: "";
+  display: block;
+  background-color: #FFF;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: .2s;
+}
+.btn-animation-02::before {
+  left: 0;
+}
+.btn-animation-02::after {
+  right: 0;
+}
+
+.btn-animation-02:hover:before,
+.btn-animation-02:hover:after {
+  width: 0;
+  background-color: #FFF;
+}
+
+.btn-animation-02:hover {
+  color: #FFF;
+}
+/* --- ↑End ボタンのCSS ---　*/
+
+/* ↓STAR 検索ボタン */
+div.btn-search{
+  position: relative;
+  left: 0%;
+}
+
+div.btn-search a {
+  padding: 0.3em 2em;
+  text-decoration: none;
+  color: #fac000;
+  border: solid 2px #fac000;
+  border-radius: 10px;
+  transition: .4s;
+}
+
+div.btn-search a:hover {
+  background: #fac000;
+  color: white;
+}
+
+div.btn-search a:active {
+  color: blue;
+}
+/* END 検索ボタン */
+
+
+
+/* --- ↓Start テキストフィールド ---　*/
+.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 10px 3%;
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #5c5c5c;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
+.ef input[type='text']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+/* --- ↑End テキストフィールド ---　*/
+
+/* --- ↓Start パスワードフィールド ---　*/
+.cp_passwd {
+	position: relative;
+	width: 80%;
+	margin: 10px 3%;
+}
+.cp_passwd input[type='password'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #5c5c5c;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
+.ef input[type='password']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+/* --- ↑End パスワードフィールド ---　*/
+
+/* --- ↓Start ダウンリストフィールド ---　*/
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid black;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+  margin: 10px 3%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.cp_list {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  width:300px
+}
+
+select.cp_list:focus {
+  background-image:
+    linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+/* --- ↓Start 日付フィールド ---　*/
+.cp_date {
+	position: relative;
+	width: 80%;
+	margin: 10px 3%;
+}
+.cp_date input[type='date'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #5c5c5c;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
+.ef input[type='date']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+/* --- ↑End 日付フィールド ---　*/
+
+/* --- ↓Start テキストエリア ---　*/
+textarea{
+	position: relative;
+  line-height: 1.5em;
+	/*width: 80%;*/
+  margin: 10px 3%;
+  font: 15px/24px sans-serif;
+  color: #5c5c5c;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  border: 1px solid #1b2538;
+  border-radius: 5px;
+}
+textarea:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+
+/* --- ↑End テキストエリア ---　*/
+
+
+/* --- ↓Start チェックボックス ---　*/
+.cp_ipcheck {
+	width: 90%;
+	margin: 2em auto;
+	text-align: left;
+}
+.cp_ipcheck input[type='checkbox'] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.cp_ipcheck label {
+	position: relative;
+	display: inline-block;
+	margin-right: 30px;
+	padding-right: 10px;
+	padding-left: 35px;
+	cursor: pointer;
+}
+.cp_ipcheck label::before {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 24px;
+	height: 24px;
+	content: ' ';
+	border: 2px solid #da3c41;
+}
+.cp_ipcheck input[type='checkbox'] + label::before {
+	border-radius: 4px;
+}
+.cp_ipcheck input[type='checkbox']:checked + label {
+	padding-left: 10px;
+	color: #ffffff;
+}
+.cp_ipcheck input[type='checkbox']:checked + label::before {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #da3c41;
+}
+/* Transition */
+.cp_ipcheck label, .cp_ipcheck label::before {
+	-webkit-transition: 0.25s all ease;
+	        transition: 0.25s all ease;
+}
+/* --- ↑End チェックボックス ---　*/
+
+/* --- ↓Start ラジオボックス ---　*/
+.cp_ipradio {
+	width: 90%;
+	margin: 2em auto;
+	text-align: left;
+}
+.cp_ipradio input[type='radio'] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.cp_ipradio label {
+	position: relative;
+	display: inline-block;
+	margin-right: 30px;
+	padding-right: 10px;
+	padding-left: 35px;
+	cursor: pointer;
+}
+.cp_ipradio label::before {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 24px;
+	height: 24px;
+	content: ' ';
+	border: 2px solid #da3c41;
+	border-radius: 4px;
+}
+.cp_ipradio input[type='radio'] + label::before {
+	border-radius: 18px;
+}
+.cp_ipradio input[type='radio']:checked + label {
+	padding-left: 10px;
+	color: #ffffff;
+}
+.cp_ipradio input[type='radio']:checked + label::before {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #da3c41;
+}
+/* Transition */
+.cp_ipradio label, .cp_ipradio label::before {
+	-webkit-transition: 0.25s all ease;
+	        transition: 0.25s all ease;
+}
+/* --- ↑End ラジオボックス ---　*/
+
+/* --- ↓Start 画面レイアウト全体 ---*/
+div.box26 {
+    position: relative;
+    margin: 2em 0;
+    padding: 3em 1em;
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+    width: 1400px;
+}
+.box26 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -15px;
+    left: 10px;
+    padding: 0 15px;
+    line-height: 1;
+    font-size: 50px;
+    background: #FFF;
+    color: #148eff;
+    font-weight: bold;
+}
+.box26 p {
+    margin: 0;
+    padding: 0;
+}
+/* --- ↑End 画面レイアウト全体 ---*/
+
+/* --- ↑Start テーブル ---*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* --- ↑End テーブル ---*/
+
+/* --- ↑Start TD ---*/
+td.td_layout {
+  background-color: #bde9ba;
+  text-align: center;
+  vertical-align: middle;
+}
+/* --- ↑End TD---*/
