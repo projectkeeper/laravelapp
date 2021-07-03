@@ -5,4 +5,4 @@
 </span>
 </div>
 <br>
-&emsp;<a href="http://localhost/laravelapp/public/ntf_init?proc_id=ntf_search_init">検索画面へ</a>
+&emsp;<a href="/ntf_init?proc_id=ntf_search_init">検索画面へ</a>
