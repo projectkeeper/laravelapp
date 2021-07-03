@@ -47,7 +47,7 @@
   <!--<input type="submit">-->
 <center>
   <div class='btn-animation-02'>
-   <a href="javascript:button_press('btn_search', '{{config('const.CONST_PROC_ID_NTF_SEARCH_EXE')}}', '','/laravelapp/public/ntf_init')" ><span>検索</span></a>
+   <a href="javascript:button_press('btn_search', '{{config('const.CONST_PROC_ID_NTF_SEARCH_EXE')}}', '','/ntf_init')" ><span>検索</span></a>
   </div>
   <div class='btn-animation-02'>
      <a href="javascript:reset()"><span>リセット</span></a>

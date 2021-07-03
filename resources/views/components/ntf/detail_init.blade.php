@@ -77,10 +77,10 @@
 </div>
 
 <div class='btn-animation-02'>
-  <a href="javascript:button_press('btn_update_start','{{config('const.CONST_PROC_ID_NTF_UPDATE_EXE')}}','{{$result->ntf_id}}','/laravelapp/public/ntf_init')" class=""><span>更新</span></a>
+  <a href="javascript:button_press('btn_update_start','{{config('const.CONST_PROC_ID_NTF_UPDATE_EXE')}}','{{$result->ntf_id}}','/public/ntf_init')" class=""><span>更新</span></a>
 </div>
 <div class='btn-animation-02'>
-  <a href="javascript:button_press('btn_delete_start','{{config('const.CONST_PROC_ID_NTF_DELETE_EXE')}}','{{$result->ntf_id}}','/laravelapp/public/ntf_init')" class=""><span>削除</span></a>
+  <a href="javascript:button_press('btn_delete_start','{{config('const.CONST_PROC_ID_NTF_DELETE_EXE')}}','{{$result->ntf_id}}','/ntf_init')" class=""><span>削除</span></a>
 </div>
 </center>
 </form>

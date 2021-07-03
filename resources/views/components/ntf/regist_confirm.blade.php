@@ -16,6 +16,6 @@
   <input type="hidden" name="ntf_period_to" value="{{$ntf_period_to}}">
   <input type="hidden" name="img_path01" value="{{$img_path01}}">
   <input type="hidden" name="img_path02" value="{{$img_path02}}">
-  <a href="javascript:button_press('btn_regist', '{{config('const.CONST_PROC_ID_NTF_REGISTER_EXE')}}', '','/laravelapp/public/ntf_init')" class=''><span>確定</span></a>
+  <a href="javascript:button_press('btn_regist', '{{config('const.CONST_PROC_ID_NTF_REGISTER_EXE')}}', '','/ntf_init')" class=''><span>確定</span></a>
 
 </form>

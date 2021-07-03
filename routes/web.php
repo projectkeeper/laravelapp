@@ -53,11 +53,8 @@ EOF;
 //Route::get('hello/{id?}/{pass?}', 'HelloController@index');
 //Route::get('hello01/{id?}/{pass?}', 'HelloController01@index');
 //Route::get('neibor/{id?}/{pass?}', 'HelloController01@neibor');
-
 //Route::get('invoke/{id?}/{pass?}', 'InvokeController');
-
 //Route::get('reqres', 'ReqResController@index');
-
 //Route::get('template/{id?}/{name?}', 'TemplateController@index');
 
 

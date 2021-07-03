@@ -27,7 +27,7 @@
 @endif
 <div class="form-wrapper">
   <h1>Sign In</h1>
-    <form method="POST" action='/laravelapp/public/exe_login'>
+    <form method="POST" action='/exe_login'>
 @csrf
     <div class="form-item">
       <label for="email"></label>

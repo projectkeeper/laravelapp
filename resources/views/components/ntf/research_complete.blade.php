@@ -31,7 +31,7 @@
            @endif
          </td>
          <td width=5% class="">
-           <a href="javascript:button_press('btn_detail', '{{config('const.CONST_PROC_ID_NTF_SHOW_DETAIL')}}','{{$result->ntf_id}}','/laravelapp/public/ntf_init')" class=''><span>詳細</span>
+           <a href="javascript:button_press('btn_detail', '{{config('const.CONST_PROC_ID_NTF_SHOW_DETAIL')}}','{{$result->ntf_id}}','/ntf_init')" class=''><span>詳細</span>
            </a>
          </td>
         </tr>

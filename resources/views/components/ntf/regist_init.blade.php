@@ -74,7 +74,7 @@
   </center>
   <center>
     <div class='btn-animation-02'>
-  <a href="javascript:button_press('btn_regist', '{{config('const.CONST_PROC_ID_NTF_REGISTER_CHECK')}}', '','/laravelapp/public/ntf_init')" class=''><span>登録</span></a>
+  <a href="javascript:button_press('btn_regist', '{{config('const.CONST_PROC_ID_NTF_REGISTER_CHECK')}}', '','/ntf_init')" class=''><span>登録</span></a>
     </div>
   <center>
 </form>

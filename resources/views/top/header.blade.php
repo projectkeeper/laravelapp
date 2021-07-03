@@ -21,8 +21,8 @@
       </li>
       <li><a href="../user/user_reg_start.php" target="_top">ユーザ登録</a></li>
       <li><a href="../user/user_search_start.php" target="_top">ユーザ検索</a></li>
-      <li><a href="/laravelapp/public/ntf_init?proc_id=ntf_register_init" target="_top">お知らせ情報登録</a></li>
-      <li><a href="/laravelapp/public/ntf_init?proc_id=ntf_search_init" target="_top">お知らせ情報検索</a></li>
+      <li><a href="/ntf_init?proc_id=ntf_register_init" target="_top">お知らせ情報登録</a></li>
+      <li><a href="/ntf_init?proc_id=ntf_search_init" target="_top">お知らせ情報検索</a></li>
       <!--<li><a href="#">技術者一括登録・更新</a></li>-->
       <li><a href="rabbit">&nbsp;</a></li>
       <li><a href="rabbit"><b>ようこそ！{{$login_name}}さん</b></a></li>
