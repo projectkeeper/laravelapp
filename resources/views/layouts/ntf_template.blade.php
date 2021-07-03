@@ -1,8 +1,8 @@
 <html>
 <head>
-<link rel="stylesheet" href="/laravelapp/public/css/menu.css">
-<link rel="stylesheet" href="/laravelapp/public/css/parts.css">
-<script type="text/javascript" src="/laravelapp/public/js/total_common.js"></script>
+<link rel="stylesheet" href="/css/menu.css">
+<link rel="stylesheet" href="/css/parts.css">
+<script type="text/javascript" src="/js/total_common.js"></script>
 <title> @yield('title')</title>
 <style>
 body {font-size:16pt; color:#999; margin:5px;}
