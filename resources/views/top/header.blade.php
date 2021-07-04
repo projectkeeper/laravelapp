@@ -1,7 +1,7 @@
 
 <header>
   <div class="cp_navi">
-    <img border="0" src="/laravelapp/public/image/title.png" width="320" height="64" alt="ロゴ"/>&emsp;
+    <img border="0" src="/image/title.png" width="320" height="64" alt="ロゴ"/>&emsp;
     <!--<b><font size="2" color="#04005f">エンジニア管理システム</b></font>-->
     <ul>
       <li><a href="content.php" target="_top">Home</a></li>

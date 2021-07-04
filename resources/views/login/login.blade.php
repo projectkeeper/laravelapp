@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/laravelapp/public/css/login.css">
+<link rel="stylesheet" href="/css/login.css">
 <title> ログイン  </title>
 </head>
 

@@ -13,10 +13,10 @@
  <div class="layout01">
   <table border=0>
   <tr>
-    <td><img border="0" src="/laravelapp/public/image/regEngineer.png" width="200" height="100" title="エンジニア情報の登録"/></td>
-    <td><img border="0" src="/laravelapp/public/image/srchEngineer.png" width="200" height="100" title="エンジニア情報の検索"/></td>
-    <td><img border="0" src="/laravelapp/public/image/regUser.png" width="200" height="100" title="ユーザ情報の登録"/></td>
-    <td><img border="0" src="/laravelapp/public/image/srchUser.png" width="200" height="100" title="ユーザ情報の検索"/></td>
+    <td><img border="0" src="/image/regEngineer.png" width="200" height="100" title="エンジニア情報の登録"/></td>
+    <td><img border="0" src="/image/srchEngineer.png" width="200" height="100" title="エンジニア情報の検索"/></td>
+    <td><img border="0" src="/image/regUser.png" width="200" height="100" title="ユーザ情報の登録"/></td>
+    <td><img border="0" src="/image/srchUser.png" width="200" height="100" title="ユーザ情報の検索"/></td>
   </tr>
 </table>
 </div>
