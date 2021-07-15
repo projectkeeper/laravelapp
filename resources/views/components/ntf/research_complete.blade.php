@@ -42,7 +42,7 @@
      <br>
   <center>
     <div class='btn-animation-02'>
-       <a href="javascript:button_press('btn_regist', 'ntf_search_init', '','/laravelapp/public/ntf_init')" class=''><span>戻る</span></a>
+       <a href="javascript:button_press('btn_regist', 'ntf_search_init', '','/ntf_init')" class=''><span>戻る</span></a>
     </div>
   <center>
 </form>

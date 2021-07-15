@@ -19,7 +19,7 @@
           </ul>
         </div>
       </li>
-      <li><a href="../user/user_reg_start.php" target="_top">ユーザ登録</a></li>
+      <li><a href="/user_info?proc_id={{config('const.CONST_PROC_ID_USER_REG_INIT')}}" target="_top">ユーザ登録</a></li>
       <li><a href="../user/user_search_start.php" target="_top">ユーザ検索</a></li>
       <li><a href="/ntf_init?proc_id=ntf_register_init" target="_top">お知らせ情報登録</a></li>
       <li><a href="/ntf_init?proc_id=ntf_search_init" target="_top">お知らせ情報検索</a></li>

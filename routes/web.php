@@ -50,21 +50,26 @@ EOF;
   return $html;
 });
 */
-//Route::get('hello/{id?}/{pass?}', 'HelloController@index');
-//Route::get('hello01/{id?}/{pass?}', 'HelloController01@index');
-//Route::get('neibor/{id?}/{pass?}', 'HelloController01@neibor');
-//Route::get('invoke/{id?}/{pass?}', 'InvokeController');
-//Route::get('reqres', 'ReqResController@index');
-//Route::get('template/{id?}/{name?}', 'TemplateController@index');
-
 
 Route::get('open_login', function(){
   return view('login.login');
 });
 
+/**
+ログイン処理
+**/
 Route::post('exe_login','LoginController@exe_login');
 Route::get('exe_login','LoginController@exe_login');
+
+/**
+お知らせ情報
+**/
 Route::get('ntf_init', 'NtfController@index');
 Route::post('ntf_init', 'NtfController@post');
 Route::get('ntf_search', 'NtfController@index');
-//Route::post('ntf_research', 'NtfController@post');
+
+/**
+ログインユーザ情報
+**/
+Route::get('user_info', 'UserInfoController@index');
+Route::post('user_info', 'UserInfoController@post');

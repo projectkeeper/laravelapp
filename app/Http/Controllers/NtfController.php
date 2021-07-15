@@ -20,19 +20,17 @@ public function index(Request $request){
   //$data = ['msg' => '本一覧', 'books' => $books];
 
    $data= [
-     'ntf_title' => $request->ntf_title,
-     'ntf_content' => $request->ntf_content,
+
      'ntf_period_from' => $request->ntf_period_from,
      'ntf_period_to' => $request->ntf_period_to,
      'proc_id' => $request->proc_id,
      'btn_id' => $request->btn_regist,
      'login_name' => $request->session()->get('name_kanji')
-    // 'ntf_data' => $ntf_data,
-     //'items' => $items
+
    ];
 
    //Helloフォルダのindex.phpを返す
-    return view('ntf_items.ntf_control', $data);
+    return view('control.ntf_control', $data);
  }
 
 /**
@@ -194,7 +192,7 @@ $param = ['ntf_title'=> $request->ntf_title,
         'login_name' => $request->session()->get('name_kanji')
       ];
 
-    return view('ntf_items.ntf_control', $data);
+    return view('control.ntf_control', $data);
     }
 
   elseif($request->proc_id == config('const.CONST_PROC_ID_NTF_SHOW_DETAIL')){
@@ -289,6 +287,6 @@ $param = ['ntf_title'=> $request->ntf_title,
 
   }
 
-  return view('ntf_items.ntf_control', $data);
+  return view('control.ntf_control', $data);
  }
 }

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Ntf_User;
+use App\User_Info;
 
 class LoginController extends Controller
 {
@@ -22,7 +22,7 @@ class LoginController extends Controller
   $this->validate($request, $validate_rule);
 
   //NTFのORMを宣言
-  $query = Ntf_User::query();
+  $query = User_Info::query();
 
   if(isset($request->login_id)){
        //$query->where('ntf_title',$request->ntf_title);
@@ -45,7 +45,7 @@ class LoginController extends Controller
     $data= [
           'proc_id' => $request->proc_id,
           'result' => $results,
-          'login_name' => $request->session()->get('name_kanji')
+          'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI'))
     ];
 
     return view('top.content', $data);
