@@ -25,7 +25,7 @@ public function index(Request $request){
      'ntf_period_to' => $request->ntf_period_to,
      'proc_id' => $request->proc_id,
      'btn_id' => $request->btn_regist,
-     'login_name' => $request->session()->get('name_kanji')
+     'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI'))
 
    ];
 
@@ -50,7 +50,7 @@ if($request->proc_id == config('const.CONST_PROC_ID_NTF_REGISTER_INIT')) {
     'ntf_period_to' => '',
     'proc_id' => $request->proc_id,
     'btn_id' => '',
-    'login_name' => $request->session()->get('name_kanji')
+    'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI'))
   ];
 
 }elseif ($request->proc_id == config('const.CONST_PROC_ID_NTF_REGISTER_CHECK')) {
@@ -79,7 +79,7 @@ if($request->proc_id == config('const.CONST_PROC_ID_NTF_REGISTER_INIT')) {
           'ntf_period_to' => $request->ntf_period_to,
           'proc_id' => $request->proc_id,
           'btn_id' => $request->btn_regist,
-          'login_name' => $request->session()->get('name_kanji'),
+          'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI')),
           'img_path01' => str_replace('public/', 'storage/', $temp_img_path01),
           'img_path02' => str_replace('public/', 'storage/', $temp_img_path02)
         ];
@@ -114,7 +114,7 @@ $param = ['ntf_title'=> $request->ntf_title,
      'ntf_title' => $request->ntf_title,
      'proc_id' => $request->proc_id,
      'btn_id' => $request->btn_regist,
-     'login_name' => $request->session()->get('name_kanji')
+     'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI'))
    ];
 
 }elseif($request->proc_id == config('const.CONST_PROC_ID_NTF_SEARCH_INIT')){
@@ -126,7 +126,7 @@ $param = ['ntf_title'=> $request->ntf_title,
     'ntf_period_to' => '',
     'proc_id' => $request->proc_id,
     'btn_id' => '',
-    'login_name' => $request->session()->get('name_kanji')
+    'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI'))
   ];
 
  }elseif($request->proc_id == config('const.CONST_PROC_ID_NTF_SEARCH_EXE')){
@@ -189,7 +189,7 @@ $param = ['ntf_title'=> $request->ntf_title,
    $data= [
         'proc_id' => $request->proc_id,
         'results' => $results,
-        'login_name' => $request->session()->get('name_kanji')
+        'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI'))
       ];
 
     return view('control.ntf_control', $data);
@@ -224,7 +224,7 @@ $param = ['ntf_title'=> $request->ntf_title,
     $data= [
          'proc_id' => $request->proc_id,
          'result' => $result,
-         'login_name' => $request->session()->get('name_kanji')
+         'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI'))
        ];
 
   }
@@ -267,7 +267,7 @@ $param = ['ntf_title'=> $request->ntf_title,
   $data= [
     'ntf_title'=>$request->ntf_title,
     'proc_id'=>$request->proc_id,
-  'login_name' => $request->session()->get('name_kanji')];
+  'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI'))];
 
   }elseif($request->proc_id == config('const.CONST_PROC_ID_NTF_DELETE_EXE')){
 
@@ -282,7 +282,7 @@ $param = ['ntf_title'=> $request->ntf_title,
     $data= [
      'ntf_title' => $request->ntf_title,
      'proc_id' => $request->proc_id,
-     'login_name' => $request->session()->get('name_kanji')
+     'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI'))
        ];
 
   }

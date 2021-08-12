@@ -15,7 +15,7 @@
    <span class="box-title">ユーザ情報</span>
     <table border="0" width="1200">
       <tr>
-        <td width=15% class="td_layout"> 名前（漢字）</td>
+        <td width=15% class="td_layout">名前</td>
         <td width=35%>
           <div class="cp_iptxt">
            <label class="ef">
@@ -23,25 +23,19 @@
            </label>
           </div>
         </td>
-        <td width=15% class="td_layout"> 名前（かな）</td>
+      </tr>
+      <tr>
+        <td width=15% class="td_layout">メールアドレス</td>
         <td width=35%>
           <div class="cp_iptxt">
            <label class="ef">
-            <input type="text" name="{{config('const.CONST_USER_NAME_KANA')}}" style="width:300px" value= "">
+             <input type="text" name="{{config('const.CONST_USER_MAIL_ADDR')}}" style="width:300px"  value= "" >
            </label>
           </div>
         </td>
       </tr>
       <tr>
-        <td width=15% class="td_layout"> ログインID</td>
-        <td width=35%>
-          <div class="cp_iptxt">
-           <label class="ef">
-             <input type="text" name="{{config('const.CONST_LOGIN_ID')}}" style="width:300px"  value= "" >
-           </label>
-          </div>
-        </td>
-        <td width=15% class="td_layout"> パスワード</td>
+        <td width=15% class="td_layout">パスワード</td>
         <td width=35%>
           <div class="cp_iptxt">
            <label class="ef">
@@ -51,24 +45,16 @@
         </td>
       </tr>
       <tr>
-        <td width=15% class="td_layout">TEL</td>
+        <td width=15% class="td_layout">パスワード(確認)</td>
         <td width=35%>
           <div class="cp_iptxt">
            <label class="ef">
-             <input type="text" name="{{config('const.CONST_USER_TEL_NUM')}}" style="width:300px"  value= "" >
-           </label>
-          </div>
-        </td>
-        <td width=15% class="td_layout">メールアドレス</td>
-        <td width=35%>
-          <div class="cp_iptxt">
-           <label class="ef">
-            <input type="text" name="{{config('const.CONST_USER_MAIL_ADDR')}}" style="width:300px" value= "">
+            <input type="text" name="{{config('const.CONST_LOGIN_PASS_CONF')}}" style="width:300px" value= "">
            </label>
           </div>
         </td>
       </tr>
-  </table>
+    </table>
   <hr>
 
 <table border="0" width="1300">

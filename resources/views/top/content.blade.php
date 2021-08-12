@@ -23,6 +23,7 @@
 </div>
   <br>
   <form>
+@csrf
   <div class="box26">
     <span class="box-title">登録データ状況</span>
     <table border="0">

@@ -41,16 +41,17 @@ return [
 
 //ログインユーザ
 'CONST_USER_USER_ID' => 'user_id',
-'CONST_USER_NAME_KANJI' => 'name_kanji',
+'CONST_USER_NAME_KANJI' => 'name',
 'CONST_USER_NAME_KANA' => 'name_kana',
 'CONST_USER_TEL_NUM' => 'tel_num',
-'CONST_USER_MAIL_ADDR' => 'mail_addr',
+'CONST_USER_MAIL_ADDR' => 'email',
 'CONST_USER_ERR_COUNT' => 'err_count',
 'CONST_USER_LOCK_FLG' => 'lock_flg',
 
 //ログイン情報
 'CONST_LOGIN_ID' => 'login_id',
-'CONST_LOGIN_PASS' => 'login_pass',
+'CONST_LOGIN_PASS' => 'password',
+'CONST_LOGIN_PASS_CONF' => 'login_pass_conf',
 
 //お知らせ機能関連
 'CONST_NTF_ID' => 'ntf_id',

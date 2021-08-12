@@ -6,7 +6,7 @@
   <span class="box-title">通知情報検索</span>
   <table border="1" width="1000">
      <tr>
-      <td width=15% class="td_layout">通知情報検索</td>
+      <td width=15% class="td_layout">タイトル</td>
       <td width=35%>
         <div class="cp_iptxt">
          <label class="ef">

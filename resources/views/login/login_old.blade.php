@@ -26,12 +26,12 @@
 </div>
 @endif
 <div class="form-wrapper">
-<h1>Sign In</h1>
-<form method="POST" action='/exe_login'>
+  <h1>Sign In</h1>
+    <form method="POST" action='/exe_login'>
 @csrf
     <div class="form-item">
       <label for="email"></label>
-      <input type="text" name="email" required="required" placeholder="メールアドレス"></input>
+      <input type="text" name="login_id" required="required" placeholder="ログインID"></input>
     </div>
     <div class="form-item">
       <label for="password"></label>

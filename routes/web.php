@@ -73,3 +73,7 @@ Route::get('ntf_search', 'NtfController@index');
 **/
 Route::get('user_info', 'UserInfoController@index');
 Route::post('user_info', 'UserInfoController@post');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

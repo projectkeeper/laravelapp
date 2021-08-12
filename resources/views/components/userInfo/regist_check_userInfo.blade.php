@@ -13,20 +13,14 @@
 @csrf
 <P>以下のユーザ情報を登録して宜しいでしょうか？</P>
 <ul>
-  <li>お名前（漢字）: {{$name_kanji}}</li>
-  <li>お名前（カナ）: {{$name_kana}}</li>
-  <li>メルアド: {{$mail_addr}}</li>
-  <li>TEL NO: {{$tel_num}}</li>
-  <li>ログインID: {{$login_id}}</li>
-  <li>ログインPW: {{$login_pass}}</li>
+  <li>お名前（漢字）: {{$name}}</li>
+  <li>メルアド: {{$email}}</li>
+  <li>ログインPW: {{$password}}</li>
 </ul>
 
-<input type="hidden" name="{{config('const.CONST_USER_NAME_KANJI')}}" value="{{$name_kanji}}">
-<input type="hidden" name="{{config('const.CONST_USER_NAME_KANA')}}" value="{{$name_kana}}">
-<input type="hidden" name="{{config('const.CONST_USER_MAIL_ADDR')}}" value="{{$mail_addr}}">
-<input type="hidden" name="{{config('const.CONST_USER_TEL_NUM')}}" value="{{$tel_num}}">
-<input type="hidden" name="{{config('const.CONST_LOGIN_ID')}}" value="{{$login_id}}">
-<input type="hidden" name="{{config('const.CONST_LOGIN_PASS')}}" value="{{$login_pass}}">
+<input type="hidden" name="{{config('const.CONST_USER_NAME_KANJI')}}" value="{{$name}}">
+<input type="hidden" name="{{config('const.CONST_USER_MAIL_ADDR')}}" value="{{$email}}">
+<input type="hidden" name="{{config('const.CONST_LOGIN_PASS')}}" value="{{$password}}">
 
 <table border="0" width="1300">
  <tr>

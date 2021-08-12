@@ -4,15 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\User_Info;
+use Illuminate\Support\Facades\Auth;
+//use App\User_Info;
 
 class LoginController extends Controller
 {
+
   /**
     POST送信
   **/
   public function exe_login(Request $request){
-
+/*
   //入力チェック
   $validate_rule =[
       'login_id' => 'required',
@@ -60,5 +62,29 @@ class LoginController extends Controller
       //  return redirect()->rout('/open_login', $data);
         //return redirect(route('/open_login',['err_msg'=>$error_msg]));
   }
+  **/
+  $email = $request->email;
+  $password = $request->login_pass;
+
+  if(Auth::attempt(['email'=>$email, 'password'=>$password])){
+
+    //Authのuser()を宣言
+    $user = Auth::user();
+    $request->session()->put(config('const.CONST_USER_NAME_KANJI'),$user->name);
+
+    //Viewに連携するデータ
+    $data= [
+          'proc_id' => $request->proc_id,
+          'login_name' => $request->session()->get(config('const.CONST_USER_NAME_KANJI'))
+    ];
+       return view('top.content', $data);
+
+  }else{
+    $data = [
+      'error_msg' => 'ユーザID又はパスワードが間違っています'
+    ];
+    return view('login.login', $data);
+  }
+
  }
 }

@@ -1,7 +1,4 @@
 <form>
-  <center>
-   <div class="box26">
-  @csrf
     <span class="box-title">通知情報検索結果一覧</span>
       <table border=1>
       <tr>
@@ -37,7 +34,7 @@
         </tr>
       @endforeach
      </table>
-   </div>
+
   </center>
      <br>
   <center>
